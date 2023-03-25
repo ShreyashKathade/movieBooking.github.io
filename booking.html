@@ -146,6 +146,7 @@ p.text span{
 
     </style>
         <script>
+            document.addEventListener('DOMContentLoaded', function() {
         const container = document.querySelector(".container");
 const seats = document.querySelectorAll(".row .seat:not(.sold)");
 const count = document.getElementById("count");
@@ -231,7 +232,7 @@ function createRazorpayPaymentButton() {
   form.appendChild(script);
   document.body.appendChild(form);
 }
-
+});
     </script>
     </head>
         <div class="movie-container">
